@@ -1,0 +1,36 @@
+<html>
+   <meta charset="UTF-8">
+   <head>
+      <title>Columbus Weather</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script>
+         var settings = {
+            "url": "https://api.openweathermap.org/data/2.5/weather?zip=43214&units=imperial&appid=b004cf0d4ae72210092330426d65ea79",
+            "method": "GET",
+            "timeout": 0,
+         };
+         
+         $.ajax(settings).done(function (response) {
+            console.log(response);
+            var content = response.wind.speed;
+            $("#windSpeed").append(content);
+            var speed = response.main.temp;
+            $("#temp").append(speed);
+            var longitude = response.coord.lon;
+            $("#long").append(longitude);
+            var latitude = response.coord.lat;
+            $("#lat").append(latitude);
+         });
+         
+      </script>
+   </head>
+   <body>
+      <h1>Columbus Current Weather</h1>
+      City Coordinates: Longitude: <span id="long"></span>, Latitude: <span id="lat"></span>  </br>
+      <br />
+      Wind speed:  <span id="windSpeed"></span>  mph</br>
+      <br />
+      Temperature: <span id="temp"></span> degrees Fahrenheit
+      
+   </body>
+</html>

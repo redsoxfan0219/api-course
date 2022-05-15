@@ -1,0 +1,32 @@
+
+What is an API?
+
+
+Application Program interface. It serves as the interaction layer between a requesting service and
+a requestor, typically on the Web.
+
+
+What is a REST API?
+
+
+REST = Representational State Transfer. It's a style of API and not a standard. REST APIs rely on HTTP to deliver requests from a requestor in order to return a response to the requestor.
+
+Typically, the vehicle for this exchange is a JSON file, favored for being lightweight and thus preferred for speed. However, any data format can be used for the API request-response
+
+
+How do rest APIs differ from other types of APIs?
+
+
+There are native APIs, which rely on language-specific designs. Web APIs, of which REST APIs are 
+one type, are language-agnostic.
+
+Besides REST APIs, the other main kind of web APIs are SOAP (Simple Object Access Protocols) APIs.
+The main differences are structure and speed. SOAPs rely on a highly structured XML request and response. This makes them slow. 
+
+SOAPs are now primarily involved in legacy systems and in highly regulated industries, like finance. 
+
+
+
+
+
+
